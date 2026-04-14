@@ -1,3 +1,5 @@
+这是完整的 inquiry.html 代码，你可以直接复制粘贴到GitHub：
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +11,6 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .gradient-bg { background: linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #7f1d1d 100%); }
-        .pattern-bg {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
         .social-icon {
             transition: transform 0.2s, opacity 0.2s;
         }
@@ -20,12 +19,12 @@
             opacity: 0.8;
         }
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bg3.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bg7.jpg');
             background-size: cover;
             background-position: center;
         }
         .footer-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bg4.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bg8.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -81,7 +80,7 @@
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label for="firstName" class="block text-sm font-semibold text-gray-700 mb-2">
-                                First Name <span class="text-red-500">*</span>
+                                First Name <span class="text-red-500"></span>
                             </label>
                             <input 
                                 type="text" 
@@ -94,7 +93,7 @@
                         </div>
                         <div>
                             <label for="lastName" class="block text-sm font-semibold text-gray-700 mb-2">
-                                Last Name <span class="text-red-500">*</span>
+                                Last Name <span class="text-red-500"></span>
                             </label>
                             <input 
                                 type="text" 
@@ -110,7 +109,7 @@
                     <!-- Email (required by Formspree) -->
                     <div>
                         <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Email Address <span class="text-red-500">*</span>
+                            Email Address <span class="text-red-500"></span>
                         </label>
                         <input 
                             type="email" 
@@ -126,7 +125,7 @@
                     <!-- Trip Duration -->
                     <div>
                         <label for="duration" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Trip Duration <span class="text-red-500">*</span>
+                            Trip Duration <span class="text-red-500"></span>
                         </label>
                         <select 
                             id="duration" 
@@ -146,7 +145,7 @@
                     <!-- Number of Travelers -->
                     <div>
                         <label for="travelers" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Number of Travelers <span class="text-red-500">*</span>
+                            Number of Travelers <span class="text-red-500"></span>
                         </label>
                         <select 
                             id="travelers" 
@@ -166,7 +165,7 @@
                     <!-- Destination Cities -->
                     <div>
                         <label for="destinations" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Destination Cities <span class="text-red-500">*</span>
+                            Destination Cities <span class="text-red-500"></span>
                         </label>
                         <input 
                             type="text" 
