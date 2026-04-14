@@ -9,16 +9,23 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .gradient-bg { background: linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #7f1d1d 100%); }
-        .pattern-bg {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bg1.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bg5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .services-bg {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('bg7.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .whychoose-bg {
+            background-image: linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92)), url('bg8.jpg');
             background-size: cover;
             background-position: center;
         }
         .cta-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bg2.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bg6.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -58,8 +65,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="gradient-bg pattern-bg relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+    <section class="hero-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 relative z-10">
             <div class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
                     Discover China Like a Local
@@ -78,19 +85,21 @@
                 </div>
             </div>
         </div>
+        <!-- Decorative elements -->
         <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-gray-50 to-transparent"></div>
     </section>
 
     <!-- What We Do Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" class="py-20 services-bg relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What We Do</h2>
                 <div class="w-20 h-1 bg-red-600 mx-auto"></div>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition duration-300">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 hover:shadow-xl transition duration-300">
                     <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
@@ -103,7 +112,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition duration-300">
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 hover:shadow-xl transition duration-300">
                     <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -115,7 +125,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition duration-300">
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 hover:shadow-xl transition duration-300">
                     <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -131,8 +142,8 @@
     </section>
 
     <!-- Differentiators Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-20 whychoose-bg relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">We are not a traditional tour company. Here is what sets us apart:</p>
@@ -140,6 +151,7 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
+                <!-- Differentiator 1 -->
                 <div class="bg-white rounded-2xl p-8 shadow-sm flex gap-6">
                     <div class="flex-shrink-0">
                         <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl">1</div>
@@ -152,6 +164,7 @@
                     </div>
                 </div>
 
+                <!-- Differentiator 2 -->
                 <div class="bg-white rounded-2xl p-8 shadow-sm flex gap-6">
                     <div class="flex-shrink-0">
                         <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>
@@ -164,6 +177,7 @@
                     </div>
                 </div>
 
+                <!-- Differentiator 3 -->
                 <div class="bg-white rounded-2xl p-8 shadow-sm flex gap-6">
                     <div class="flex-shrink-0">
                         <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl">3</div>
@@ -176,6 +190,7 @@
                     </div>
                 </div>
 
+                <!-- Differentiator 4 -->
                 <div class="bg-white rounded-2xl p-8 shadow-sm flex gap-6">
                     <div class="flex-shrink-0">
                         <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl">4</div>
@@ -202,6 +217,7 @@
                 Start Your Journey
             </a>
         </div>
+        <!-- Overlay for better text readability -->
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
     </section>
 
@@ -209,6 +225,7 @@
     <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8">
+                <!-- Brand -->
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
                         <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
@@ -221,6 +238,7 @@
                     </p>
                 </div>
 
+                <!-- Contact - Stacked Layout -->
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
                     <ul class="space-y-3 text-gray-400">
@@ -239,6 +257,7 @@
                     </ul>
                 </div>
 
+                <!-- Social Icons -->
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
                     <div class="flex space-x-4">
